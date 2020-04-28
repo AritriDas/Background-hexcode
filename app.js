@@ -12,6 +12,8 @@ function getHex() {
     {
         let random = Math.floor(Math.random()*hexNumbers.length);
         hexCol += hexNumbers[random];
-        console.log(hexCol);
+        // console.log(hexCol);
     }
+    bodyBg.style.backgroundColor = hexCol;
+    hex.innerHTML = hexCol;
 }
